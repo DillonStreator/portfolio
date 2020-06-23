@@ -1,0 +1,35 @@
+@import "./variables.scss";
+
+.profileImg {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
+
+.name {
+    font-size: 35px;
+}
+
+.title {
+    color: $accent1;
+}
+
+footer {
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+
+    & a {
+        margin-right: 15px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        & img {
+            height: 40px;
+        }
+    }
+}
