@@ -1,7 +1,7 @@
 # Dillon Streator
 
  - E-mail: [dillonstreator@gmail.com](mailto:dillonstreator@gmail.com)
- - Web: [dillonstreator.github.io](https://dillonstreator.github.io)
+ - Web: [dillon.streator.me](https://dillon.streator.me)
  - Github: [github.com/DillonStreator](https://github.com/DillonStreator)
 
 --- 
@@ -32,9 +32,11 @@ I’m a detail-oriented and motivated developer looking for new opportunities. I
       - Node, Express, Java, Spring Boot
       - React, Redux, ducks, sagas, Angular 2+, Vue
       - MSSQL, SQL, MongoDB, Mongoose, Hibernate, Flyway, JPA
-      - RESTful and RPC APIs
+      - Graphql, RESTful, and RPC APIs
 
 ## Work history
-  - June 2017 - Present at Recharging Bar as Frontend Developer
-  - July 2017 - December 2018 at JetBrains as CTU Campuss Ambassador
-  - June 2016 - December 2017 at dotFOX as Web Developer
+  - Mar 2020 - Present at Enova as Full Stack Developer
+  - Jan 2019 - Mar 2020 at Allstate as Full Stack Developer
+  - Jun 2018 - Jan 2019 at Youtech as Director of Development
+  - Sept 2017 - Jun 2018 at Youtech as Full Stack Developer
+  - May 2017 - Sept 2017 at The Difference Engine as Full Stack Developer
