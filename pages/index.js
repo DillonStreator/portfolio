@@ -1,4 +1,5 @@
 import ProgressiveImage from 'react-progressive-image';
+import Typewriter from 'typewriter-effect';
 
 import styles from '../public/scss/index.module.scss';
 
@@ -17,6 +18,16 @@ const Home = () => {
             </ProgressiveImage>
             <h2 className={styles.name}>Dillon Streator</h2>
             <h3 className={styles.title}>Full Stack Developer</h3>
+            <div className={styles.terminal}>
+              <Typewriter options={{
+                strings: ["Simplicity > Complexity", "Secure Succinct Software", "Test Driven Development"],
+                autoStart: true,
+                loop: true,
+                cursorClassName: styles.cursor,
+                wrapperClassName: styles.wrapper,
+              }}
+              />
+            </div>
           </div>
         </section>
         <section>
@@ -27,10 +38,10 @@ const Home = () => {
       </main>
       <footer>
         <div className={styles.social}>
-          <a href="https://www.linkedin.com/in/dillon-streator-75b01b83/" target="blank" rel="noopener noreferrer"><img src="/linkedin.svg" alt="linkedin logo"/></a>
-          <a href="https://www.github.com/DillonStreator" target="blank" rel="noopener noreferrer"><img src="/github.svg" alt="github logo"/></a>
-          <a href="https://stackoverflow.com/users/8765619/cranky-coder" target="blank" rel="noopener noreferrer"><img src="/stack-overflow.svg" alt="stackoverflow logo"/></a>
-          <a href="https://www.npmjs.com/~dillonstreator" target="blank" rel="noopener noreferrer"><img src="/npm.svg" alt="npm logo"/></a>
+          <a href="https://www.linkedin.com/in/dillon-streator-75b01b83/" target="blank" rel="noopener noreferrer"><img src="/linkedin.svg" alt="linkedin logo" /></a>
+          <a href="https://www.github.com/DillonStreator" target="blank" rel="noopener noreferrer"><img src="/github.svg" alt="github logo" /></a>
+          <a href="https://stackoverflow.com/users/8765619/cranky-coder" target="blank" rel="noopener noreferrer"><img src="/stack-overflow.svg" alt="stackoverflow logo" /></a>
+          <a href="https://www.npmjs.com/~dillonstreator" target="blank" rel="noopener noreferrer"><img src="/npm.svg" alt="npm logo" /></a>
         </div>
       </footer>
     </>

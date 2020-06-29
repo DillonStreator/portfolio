@@ -40,23 +40,23 @@ a {
     &::before,
     &::after {
         content: "";
-        color: #bc17e6;
+        color: $purps;
         display: inline-block;
         box-sizing: border-box;
         width: 7px;
         position: relative;
         opacity: 0;
         transition: transform 0.35s, opacity 0.35s;
-        border-top: 1.5px solid #bc17e6;
-        border-bottom: 1.5px solid #bc17e6;
+        border-top: 1.5px solid $purps;
+        border-bottom: 1.5px solid $purps;
     }
     &::before {
         transform: translateX(5px) scaleY(0.5);
-        border-left: 3px solid #bc17e6;
+        border-left: 3px solid $purps;
     }
     &::after {
         transform: translateX(-5px) scaleY(0.5);
-        border-right: 3px solid #bc17e6;
+        border-right: 3px solid $purps;
     }
     &:hover::before,
     &:focus::before {

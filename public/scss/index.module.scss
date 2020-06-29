@@ -33,3 +33,64 @@ footer {
         }
     }
 }
+
+.terminal {
+    margin-top: 25px;
+
+    .wrapper {
+        border-radius: 5px;
+        color: $accent1;
+        padding: 5px;
+        font-size: 16px;
+        font-family: monospace;
+
+        background-color: $primary;
+        box-shadow: 3px 3px 5px $primary-darker,
+            -3px -3px 5px $primary-lighter;
+
+        & .prefix {
+            color: $purps;
+            margin-right: 5px;
+        }
+
+        &::before {
+            content: ">";
+            color: $purps;
+            margin-right: 8px;
+            font-weight: bold;
+        }
+        &::after {
+            content: "|";
+            color: $purps;
+            animation-name: cursor;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            margin-left: 3px;
+            font-weight: bold;
+        }
+    }
+
+    .cursor {
+        display: none;
+    }
+}
+
+@keyframes cursor {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@media (max-width: 764px) {
+    .profileImg {
+        height: 200px;
+        width: 200px;
+    }
+}
