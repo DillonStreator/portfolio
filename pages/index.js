@@ -10,12 +10,15 @@ const Home = () => {
       <main>
         <section>
           <div className="container">
-            <ProgressiveImage
-              src="dillon_headshot_250x250.jpg"
-              placeholder="/dillon_headshot_25x25.jpg"
-            >
-              {src => <img className={styles.profileImg} src={src} alt="profile picture" />}
-            </ProgressiveImage>
+            <div className={styles.profileImg}>
+              <ProgressiveImage
+                src="dillon_headshot_250x250.jpg"
+                placeholder="/dillon_headshot_25x25.jpg"
+              >
+                {src => <img src={src} alt="profile picture" />}
+              </ProgressiveImage>
+              <div className={styles.overlay} />
+            </div>
             <h2 className={styles.name}>Dillon Streator</h2>
             <h3 className={styles.title}>Full Stack Developer</h3>
             <div className={styles.terminal}>
