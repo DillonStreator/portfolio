@@ -1,12 +1,40 @@
+import Head from 'next/head';
 import ProgressiveImage from 'react-progressive-image';
 import Typewriter from 'typewriter-effect';
+import ReactGA from 'react-ga';
 
 import styles from '../public/scss/index.module.scss';
+
+const socials = [
+  {
+    href: "https://www.linkedin.com/in/dillon-streator-75b01b83/",
+    src: "/linkedin.svg",
+    alt: "linkedin logo",
+  },
+  {
+    href: "https://www.npmjs.com/~dillonstreator",
+    src: "/npm.svg",
+    alt: "npm logo",
+  },
+  {
+    href: "https://www.github.com/DillonStreator",
+    src: "/github.svg",
+    alt: "github logo",
+  },
+  {
+    href: "https://stackoverflow.com/users/8765619/cranky-coder",
+    src: "/stack-overflow.svg",
+    alt: "stackoverflow logo",
+  },
+];
 
 const Home = () => {
 
   return (
     <>
+      <Head>
+        <title>Dillon Streator</title>
+      </Head>
       <main>
         <section>
           <div className="container">
@@ -41,10 +69,7 @@ const Home = () => {
       </main>
       <footer>
         <div className={styles.social}>
-          <a href="https://www.linkedin.com/in/dillon-streator-75b01b83/" target="blank" rel="noopener noreferrer"><img src="/linkedin.svg" alt="linkedin logo" /></a>
-          <a href="https://www.github.com/DillonStreator" target="blank" rel="noopener noreferrer"><img src="/github.svg" alt="github logo" /></a>
-          <a href="https://stackoverflow.com/users/8765619/cranky-coder" target="blank" rel="noopener noreferrer"><img src="/stack-overflow.svg" alt="stackoverflow logo" /></a>
-          <a href="https://www.npmjs.com/~dillonstreator" target="blank" rel="noopener noreferrer"><img src="/npm.svg" alt="npm logo" /></a>
+          {socials.map(({ href, src, alt }) => <a onClick={() => ReactGA.event({ category: "social view", action: "click", value: href })} key={href} href={href} target="blank" rel="noopener noreferrer"><img src={src} alt={alt} /></a>)}
         </div>
       </footer>
     </>

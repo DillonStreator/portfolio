@@ -21,7 +21,6 @@ class MyDocument extends Document {
                     <link href='/favicon-32x32.png' rel='icon' type='image/png' sizes='32x32' />
                     <link rel='apple-touch-icon' href='/apple-touch-icon.png'></link>
                     <meta name='theme-color' content='#2f2f2f' />
-                    <title>Dillon Streator</title>
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
                 <body>
