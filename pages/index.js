@@ -63,7 +63,7 @@ const Home = () => {
         </section>
         <section>
           <div className="container">
-            <a href="/resume.pdf" target="blank" rel="noopener noreferrer">CV</a>
+            <a onClick={() => ReactGA.event({ category: "resume view", action: "click" })} href="/resume.pdf" target="blank" rel="noopener noreferrer">CV</a>
           </div>
         </section>
       </main>
