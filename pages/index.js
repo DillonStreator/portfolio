@@ -40,6 +40,7 @@ const Home = () => {
           <div className="container">
             <div className={styles.profileImg}>
               <ProgressiveImage
+                delay={500}
                 src="dillon_headshot_250x250.jpg"
                 placeholder="/dillon_headshot_25x25.jpg"
               >

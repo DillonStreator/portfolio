@@ -10,8 +10,8 @@ class MyDocument extends Document {
         return (
             <Html lang="en">
                 <Head>
-                    <meta charset='utf-8' />
-                    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+                    <meta charSet='utf-8' />
+                    <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
                     <meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5' />
                     <meta name='description' content='Personal portfolio for Dillon Streator' />
                     <meta name='keywords' content='WebDev Portfolio' />
