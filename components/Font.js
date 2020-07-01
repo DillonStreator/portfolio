@@ -2,7 +2,7 @@ import FontFaceObserver from 'fontfaceobserver';
 
 const Font = () => {
     const link = document.createElement('link')
-    link.href = 'https://fonts.googleapis.com/css?family=Montserrat'
+    link.href = 'https://fonts.googleapis.com/css?family=Montserrat&display=swap'
     link.rel = 'stylesheet'
 
     document.head.appendChild(link)
