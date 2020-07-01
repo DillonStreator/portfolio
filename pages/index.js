@@ -41,10 +41,16 @@ const Home = () => {
             <div className={styles.profileImg}>
               <ProgressiveImage
                 delay={500}
-                src="dillon_headshot_250x250.jpg"
-                placeholder="/dillon_headshot_25x25.jpg"
+                src="dillon_headshot_250x250.webp"
+                placeholder="/dillon_headshot_25x25.webp"
               >
-                {src => <img src={src} alt="profile picture" />}
+                {src => (
+                  <picture>
+                    <source type="image/webp" srcSet={src} />
+                    <source type="image/jpeg" srcSet={src.replace(".webp", ".jpg")} />
+                    <img src={src} alt="profile picture" />
+                  </picture>
+                )}
               </ProgressiveImage>
               <div className={styles.overlay} />
             </div>
