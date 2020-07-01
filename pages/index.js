@@ -70,13 +70,13 @@ const Home = () => {
         </section>
         <section>
           <div className="container">
-            <a onClick={() => ReactGA.event({ category: "resume view", action: "click" })} href="/resume.pdf" target="blank" rel="noopener noreferrer">CV</a>
+            <a onClick={() => ReactGA.event({ category: "resume view" })} href="/resume.pdf" target="blank" rel="noopener noreferrer">CV</a>
           </div>
         </section>
       </main>
       <footer>
         <div className={styles.social}>
-          {socials.map(({ href, src, alt }) => <a onClick={() => ReactGA.event({ category: "social view", action: "click", value: href })} key={href} href={href} target="blank" rel="noopener noreferrer"><img src={src} alt={alt} /></a>)}
+          {socials.map(({ href, src, alt }) => <a onClick={() => ReactGA.event({ category: "social view", action: href })} key={href} href={href} target="blank" rel="noopener noreferrer"><img src={src} alt={alt} /></a>)}
         </div>
       </footer>
     </>
