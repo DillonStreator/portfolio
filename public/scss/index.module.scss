@@ -129,9 +129,26 @@ footer {
     }
 }
 
+.metrics {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 2rem;
+
+    & > a {
+        color: $accent1;
+    }
+}
+
 @media (max-width: 764px) {
     .profileImg {
         height: 200px;
         width: 200px;
+    }
+}
+
+@media (max-height: 600px) {
+    section.cv {
+        padding: 15px;
     }
 }
