@@ -21,6 +21,7 @@ app
             ],
             "style-src": ["'self'", "fonts.googleapis.com 'unsafe-inline'"],
             "font-src": ["'self'", "fonts.gstatic.com 'unsafe-inline'"],
+            "img-src": ["'self'", "www.google-analytics.com 'unsafe-inline'"],
           },
         },
       })
