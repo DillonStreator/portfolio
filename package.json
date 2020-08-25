@@ -5,11 +5,14 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 8000"
+    "start": "cross-env NODE_ENV=production node server.js"
   },
   "dependencies": {
     "classnames": "^2.2.6",
+    "cross-env": "^7.0.2",
+    "express": "^4.17.1",
     "fontfaceobserver": "^2.1.0",
+    "helmet": "^4.1.0",
     "next": "9.4.4",
     "next-pwa": "^2.6.1",
     "react": "16.13.1",

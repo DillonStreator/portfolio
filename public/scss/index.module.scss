@@ -12,7 +12,6 @@
     }
 
     & .overlay {
-        transition: box-shadow 1s;
         position: absolute;
         top: 0;
         left: 0;
@@ -22,24 +21,31 @@
         animation-name: imageBlend;
         animation-fill-mode: forwards;
         animation-duration: 650ms;
+        box-shadow: inset 0 0 5px 3px $primary,
+            inset 0 0 5px 3px $primary,
+            inset 0 0 5px 3px $primary,
+            0 0 10px 10px $primary;
     }
 }
 
 @keyframes imageBlend {
     0% {
-        box-shadow: inset 0 0 3px 0px $primary,
-        inset 0 0 6px 0px $primary,
-        inset 0 0 9px 0px $primary;
+        box-shadow: inset 0 0 5px 3px $primary,
+            inset 0 0 5px 3px $primary,
+            inset 0 0 5px 3px $primary,
+            0 0 0px 3px $primary;
     }
     75% {
-        box-shadow: inset 0 0 20px 5px $primary,
-        inset 0 0 30px 5px $primary,
-        inset 0 0 40px 5px $primary
+        box-shadow: inset 0 0 30px 20px $primary,
+            inset 0 0 40px 20px $primary,
+            inset 0 0 50px 20px $primary,
+            0 0 0px 3px $primary;
     }
     100% {
-        box-shadow: inset 0 0 10px 5px $primary,
-        inset 0 0 20px 5px $primary,
-        inset 0 0 30px 5px $primary
+        box-shadow: inset 0 0 20px 10px $primary,
+        inset 0 0 30px 10px $primary,
+        inset 0 0 40px 10px $primary,
+        0 0 0px 3px $primary;
     }
 }
 
