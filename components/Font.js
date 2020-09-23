@@ -4,6 +4,7 @@ const Font = () => {
     const link = document.createElement('link')
     link.href = 'https://fonts.googleapis.com/css?family=Montserrat&display=swap'
     link.rel = 'stylesheet'
+    link.crossOrigin = 'anonymous'
 
     document.head.appendChild(link)
 
