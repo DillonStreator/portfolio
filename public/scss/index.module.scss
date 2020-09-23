@@ -129,17 +129,6 @@ footer {
     }
 }
 
-.metrics {
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
-    gap: 2rem;
-
-    & > a {
-        color: $accent1;
-    }
-}
-
 @media (max-width: 764px) {
     .profileImg {
         height: 200px;

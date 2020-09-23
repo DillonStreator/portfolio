@@ -78,11 +78,6 @@ const Home = () => {
         <div className={styles.social}>
           {socials.map(({ href, src, alt }) => <a onClick={() => ReactGA.event({ category: "social view", action: href })} key={href} href={href} target="blank" rel="noopener noreferrer"><img src={src} alt={alt} /></a>)}
         </div>
-        <div className={styles.metrics}>
-          <a onClick={() => ReactGA.event({ category: "speed" })} href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fdillon.streator.me%2F&tab=desktop" target="blank" rel="noopener noreferrer">speed</a>
-          <a onClick={() => ReactGA.event({ category: "ssl" })} href="https://www.ssllabs.com/ssltest/analyze.html?d=https://dillon.streator.me" target="blank" rel="noopener noreferrer">ssl</a>
-          <a onClick={() => ReactGA.event({ category: "headers" })} href="https://securityheaders.com/?q=dillon.streator.me&followRedirects=on" target="blank" rel="noopener noreferrer">headers</a>
-        </div>
       </footer>
     </>
   )

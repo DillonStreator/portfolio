@@ -22,8 +22,8 @@ class MyDocument extends Document {
                     <link rel='apple-touch-icon' href='/apple-touch-icon.png'></link>
                     <meta name='theme-color' content='#2f2f2f' />
                     <link rel="icon" href="/favicon.ico" />
-                    <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin="anonymous" />
-                    <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
+                    <link rel="preconnect" href="https://www.google-analytics.com" />
+                    <link rel="preconnect" href="https://fonts.googleapis.com" />
                 </Head>
                 <body>
                     <Main />

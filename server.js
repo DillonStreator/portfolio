@@ -4,7 +4,7 @@ const helmet = require("helmet");
 
 const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
-const handle = app.getRequestHandler();
+const handler = app.getRequestHandler();
 
 app
   .prepare()
@@ -27,9 +27,7 @@ app
       })
     );
 
-    server.get("*", (req, res) => {
-      return handle(req, res);
-    });
+    server.get("*", (req, res) => handler(req, res));
 
     server.listen(8000, (err) => {
       if (err) throw err;
